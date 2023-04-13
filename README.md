@@ -26,7 +26,7 @@ The reason is that `useLocation` is used in this page, which is implemented with
 
 1. Remove Suspense in umi, but remain `renderToPipeableStream` for Streaming SSR. 
 This does not resolve the problem, but will make user easier to manage Suspense. 
-2. Override react-router `useLocation` in umi, to wrap context update in `startTransiton`.
+2. Override react-router `useLocation` in umi, to wrap context update in `startTransiton`, whitch may become a workaround.
 
 ### Related issues
 
